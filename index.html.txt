@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roulette 0-36 GT</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>🎰 ROULETTE 0-36 GT FINAL 🎰</h1>
+
+<div class="mode">
+<button onclick="setMode('player')">Mode Player</button>
+<button class="bandar" onclick="setMode('bandar')">Mode Bandar</button>
+</div>
+<p>Mode: <span id="modeTxt">Player</span></p>
+
+<div>
+Bet:
+<button class="bet-btn active" onclick="setBet(1)">1 WL</button>
+<button class="bet-btn" onclick="setBet(5)">5 WL</button>
+<button class="bet-btn" onclick="setBet(10)">10 WL</button>
+</div>
+
+<canvas id="wheel" width="250" height="250"></canvas>
+<div class="panah">⬇️</div>
+
+<button onclick="spin()" id="btn">PUTAR</button>
+<p id="hasil">Pilih mode dulu!</p>
+<p>Saldo: <span id="saldo">100</span> WL <button onclick="resetSaldo()">Reset</button></p>
+
+<button class="host" onclick="loginHost()">🔐 Host Panel</button>
+
+<div class="panel" id="panelHost">
+<h3>⚙️ HOST PANEL</h3>
+<div id="editSlot"></div>
+<button onclick="saveSlot()">💾 Simpan Roda</button>
+<button onclick="logoutHost()">🚪 Keluar</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

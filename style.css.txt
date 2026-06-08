@@ -1,0 +1,49 @@
+body{
+  background:#0a0a0a;
+  color:white;
+  font-family:Arial;
+  text-align:center;
+  padding:15px
+}
+h1{
+  color:gold;
+  text-shadow:0 0 10px gold;
+  font-size:22px
+}
+#wheel{
+  border:10px solid gold;
+  border-radius:50%;
+  box-shadow:0 0 30px gold;
+  transition:transform 4s cubic-bezier(0.17,0.67,0.12,0.99)
+}
+button{
+  background:linear-gradient(gold,orange);
+  border:none;
+  padding:12px 25px;
+  font-size:16px;
+  font-weight:bold;
+  border-radius:12px;
+  cursor:pointer;
+  margin:6px
+}
+button:disabled{opacity:0.4}
+button.host{background:#4d4dff}
+button.bandar{background:red}
+.bet-btn{background:#333;border:2px solid gold}
+.bet-btn.active{background:gold;color:black}
+.panel{
+  background:#111;
+  padding:12px;
+  border-radius:15px;
+  margin:12px 0;
+  border:2px solid gold;
+  display:none
+}
+#hasil{font-size:24px;margin:15px;font-weight:bold}
+#saldo{font-size:20px;color:cyan}
+.panah{
+  margin-top:-250px;
+  font-size:30px;
+  pointer-events:none;
+  z-index:10
+}
